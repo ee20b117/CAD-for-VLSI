@@ -61,4 +61,7 @@ Total no. of cells: 12268
 It can be seen that with the increase in no. of pipeline stages from 1 to 4, the area (which is proportional to no. of cells) has nearly doubled. However, the minimum Clock Period required has reduced by nearly four times which is substantial. Therefore, if area is a bigger constraint, Single stage pipeline can be adopted while if timing is the crucial factor, Four stage Pipelined design can be adopted.   
 
 ## Alternate Hardware Extensive Approach
-If there is very little or no constraint on area, hardware extensive approches with multiple harware blocks to perform the computations can be used. These are implemented using funtion calls in bluespec as depicted in the [alternate hardware extensive approach](alternate hardware extensive approach). This substantially decreases the delay and hence, the minimum clock period required to nearly 20 units. However, the area increases significantly (around 6-7 times). 
+If there is very little or no constraint on area, hardware extensive approches with multiple harware blocks to perform the computations can be used. These are implemented using funtion calls in bluespec as depicted in the [alternate hardware extensive approach](https://github.com/ee20b117/CAD-for-VLSI/tree/main/alternate%20hardware%20extensive%20approach). This substantially decreases the delay and hence, the minimum clock period required to nearly 20 units. However, the area increases significantly (around 6-7 times). 
+
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/b98a658a-af80-4751-b717-d5053447aa24)
+
