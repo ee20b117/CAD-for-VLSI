@@ -22,7 +22,8 @@
 
 ### Expected Output
 ```IMAC Passed 6 cases out of 6 cases```
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/468168bc-6e7d-44a9-858d-8435d7c0ee43)
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/e615f395-8705-4ea2-824b-370fd923b0cb)
+
 
 
 ### Modiying the testbench
