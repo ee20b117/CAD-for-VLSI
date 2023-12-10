@@ -28,6 +28,6 @@ This directory contains the code for 4-stage Pipelined Implementation of IMAC.
 ![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/f6a9c2e4-19df-4be4-9237-3ab05f29e068)
 
 ### Modiying the testbench
-Currently, the testbench has 6 pre-defined test cases. They can be modified appropriately. The no. of test cases can also be increased by changing the initialised values of the registers: mul_total_cases and acc_total_cases in the testbench.
+Currently, the testbench has 12 pre-defined test cases. They can be modified appropriately. The no. of test cases can also be increased by changing the initialised values of the registers: mul_total_cases and acc_total_cases in the testbench.
 
 ### The .v files are corresponding verilog files generated using ```bsc -u -verilog imac_top_module_4stage.bsv``` 
