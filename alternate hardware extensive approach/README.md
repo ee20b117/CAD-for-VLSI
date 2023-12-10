@@ -4,7 +4,7 @@ This directory contains an alternate hardware approach. If there is very little 
 
 ## Stepts to test the code
 ### Step 1: Copy all the .bsv files from into the same directory and cd to that directory.
-### Step 2: Create .ba files for modules acc (mkAcc), mul (mkMul) and top_module (mkImac) and the testbench (imacTb). 
+### Step 2: Create .ba files for modules mkMac and testbench (imacTb). 
 ```bsc -sim -g mkMac iMac.bsv```
 
 ```bsc -sim -g imacTb test_imac.bsv```
