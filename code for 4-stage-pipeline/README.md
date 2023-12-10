@@ -24,8 +24,9 @@ This directory contains the code for 4-stage Pipelined Implementation of IMAC.
 ```./imacTb_bsim```
 
 ### Expected Output
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/7b52a80e-3473-4c08-87cd-c1520512d128)
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/f6a9c2e4-19df-4be4-9237-3ab05f29e068)
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/386efc01-c8c1-4787-9a2f-7b525880a6ee)
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/1b42cfd6-2b5f-4f83-b1f8-65305d5f1a0b)
+
 
 ### Modiying the testbench
 Currently, the testbench has 12 pre-defined test cases. They can be modified appropriately. The no. of test cases can also be increased by changing the initialised values of the registers: mul_total_cases and acc_total_cases in the testbench.
