@@ -1,5 +1,3 @@
-# CAD-for-VLSI
-
 # 64 BIT PIPELINED IMAC
 
 ## INTEGER MULTIPLIER AND ACCUMULATE
@@ -48,7 +46,8 @@ Working:
 The algorithm works by scanning the multiplicand and the multiplier bits sequentially. At each step, it examines two consecutive bits of the multiplier. Depending on the bit pair's value, Booth's algorithm employs three possible operations: no operation, addition, or subtraction. If the current bit pair is "00" or "11," arithmetic right shift is performed. In the case of "01," a partial product (shifted multiplicand) is added, while for "10," a partial product is subtracted. This method optimizes the multiplication process by reducing the number of additions and subtractions compared to conventional multiplication algorithms. 
 
 
-
+## CODE - Modules, Testing and Validation
+The complete guide to using the modules (top_module, mul and acc) are explained in the README file inside code/ directory.
 
 
 
