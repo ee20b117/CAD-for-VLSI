@@ -46,7 +46,7 @@ Working:
 The algorithm works by scanning the multiplicand and the multiplier bits sequentially. At each step, it examines two consecutive bits of the multiplier. Depending on the bit pair's value, Booth's algorithm employs three possible operations: no operation, addition, or subtraction. If the current bit pair is "00" or "11," arithmetic right shift is performed. In the case of "01," a partial product (shifted multiplicand) is added, while for "10," a partial product is subtracted. This method optimizes the multiplication process by reducing the number of additions and subtractions compared to conventional multiplication algorithms. 
 
  **PIPELINE**
-We have designed a 3 stage pipeline: input, Multiplier and accumulator
+Pipelining has been incorporated to inrease the clock frequency. Instead of a single IMAC instruction, it has been divided into Multiplication and Accumulation using mkMul and mkAcc modules thereby increasing the throughput.
 ## AREA
 ![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/a7de4bd9-0bc5-49c7-940f-292be8ed885c)
 ![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/afd2b89b-c9a3-4529-9771-18344f82898c)
