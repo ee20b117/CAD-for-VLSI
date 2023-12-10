@@ -21,7 +21,8 @@ The decision to settle on the Booth multiplier was influenced by its demonstrate
 
 **Utilisation of booth algorithm in a proposed solution for 64 bit multiplier**
 
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/85502194/4f575411-e040-4ea1-91e8-300db7aa0f5a)
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/85502194/6c202373-e1ca-43c3-b341-a2ef1a0dd4cb)
+
 ![image](https://github.com/ee20b117/CAD-for-VLSI/assets/85502194/d9076270-22a6-45a8-82fb-a88fce8a6f82)
 
 
