@@ -1,6 +1,8 @@
 
 This directory contains the code for 1-stage Pipelined Implementation of IMAC.
 
+This testbench incorporates timing information and also has additional test cases in comparison to earlier version of the testbench in [code](code). However, the module definitions of the modules MUL, ACC and top_module are still the same.
+
 # How to run and test
 
 ## Stepts to test the code
