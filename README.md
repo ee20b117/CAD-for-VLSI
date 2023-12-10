@@ -60,6 +60,7 @@ The complete guide to using the modules (top_module, mul and acc) and testing th
 
 The directory [code](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code) also contains the single stage implementation but with a primitive testbench with fewer test cases and without timing imformation. However, the module defintions are the same.
 
+An alternate approach which is more hardware extensive is presented in [alternate hardware extensive approach](https://github.com/ee20b117/CAD-for-VLSI/tree/main/alternate%20hardware%20extensive%20approach) directory.
 # References
 https://ieeexplore.ieee.org/document/5548769
 
