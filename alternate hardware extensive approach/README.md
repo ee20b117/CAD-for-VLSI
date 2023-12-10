@@ -1,4 +1,4 @@
-If there is very little or no constraint on area, hardware extensive approches with multiple harware blocks to perform the computations can be used. These are implemented using funtion calls in bluespec as shown.
+This directory contains an alternate hardware approach. If there is very little or no constraint on area, hardware extensive approches with multiple harware blocks to perform the computations can be used. These are implemented using funtion calls in bluespec as shown.
 
 # How to run and test
 
