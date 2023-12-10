@@ -22,6 +22,8 @@
 
 ### Expected Output
 ```IMAC Passed 6 cases out of 6 cases```
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/468168bc-6e7d-44a9-858d-8435d7c0ee43)
+
 
 ### Modiying the testbench
 Currently, the testbench has 6 pre-defined test cases. They can be modified appropriately. The no. of test cases can also be increased by changing the initialised values of the registers: mul_total_cases and acc_total_cases in the testbench.
