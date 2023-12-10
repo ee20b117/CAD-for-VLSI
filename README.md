@@ -49,6 +49,14 @@ The algorithm works by scanning the multiplicand and the multiplier bits sequent
 ## CODE - Modules, Testing and Validation
 The complete guide to using the modules (top_module, mul and acc) are explained in the [README](code/README.md) file inside [code/](code) directory.
 
+## References
+https://ieeexplore.ieee.org/document/5548769
+
+https://web.ece.ucsb.edu/its/bluespec/training/BSV/labs/pipeline/pipeline.pdf
+
+https://www.iraj.in/journal/journal_file/journal_pdf/11-426-151730467383-87.pdf
+
+A Low-Power Area-Efficient Precision Scalable Multiplier with an Input Vector Systolic Structure (MDPI Journal/Publications)
 
 
 
