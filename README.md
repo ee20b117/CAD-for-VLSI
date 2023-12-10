@@ -49,6 +49,8 @@ The algorithm works by scanning the multiplicand and the multiplier bits sequent
 We have designed a 3 stage pipeline: input, Multiplier and accumulator
 ## AREA
 ![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/a7de4bd9-0bc5-49c7-940f-292be8ed885c)
+![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/afd2b89b-c9a3-4529-9771-18344f82898c)
+
 
 ## CODE - Modules, Testing and Validation
 The complete guide to using the modules (top_module, mul and acc) are explained in the [README](code/README.md) file inside [code/](code) directory.
