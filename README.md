@@ -45,46 +45,20 @@ Working:
 
 The algorithm works by scanning the multiplicand and the multiplier bits sequentially. At each step, it examines two consecutive bits of the multiplier. Depending on the bit pair's value, Booth's algorithm employs three possible operations: no operation, addition, or subtraction. If the current bit pair is "00" or "11," arithmetic right shift is performed. In the case of "01," a partial product (shifted multiplicand) is added, while for "10," a partial product is subtracted. This method optimizes the multiplication process by reducing the number of additions and subtractions compared to conventional multiplication algorithms. 
 
- ### PIPELINING
-Pipelining has been incorporated to inrease the clock frequency. Instead of a single IMAC instruction, it has been divided into Multiplication and Accumulation using mkMul and mkAcc modules thereby increasing the throughput.
-## AREA
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/a7de4bd9-0bc5-49c7-940f-292be8ed885c)
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/afd2b89b-c9a3-4529-9771-18344f82898c)
+ ## PIPELINING and AREA
+Pipelining has been incorporated to inrease the clock frequency. Instead of a single IMAC instruction, it has been divided into Multiplication and Accumulation using mkMul and mkAcc modules thereby increasing the throughput in the [single stage implementatation](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code%20for%201-stage%20pipeline). Further, the multiplication instruction is divided into further stages in the [4 stage implementation](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code%20for%204-stage-pipeline)
+
+Detailed **Timing** and **Area anaysis** are presented in [Pipeline.md](Pipeline.md)
 
 
 ## CODE - Modules, Testing and Validation
-The complete guide to using the modules (top_module, mul and acc) are explained in the [README](code/README.md) file inside [code/](code) directory.
+The complete guide to using the modules (top_module, mul and acc) are explained in the README Files of corresponding directories:
 
+[code for 1-stage-implementatation](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code%20for%201-stage%20pipeline)
 
+[code for 4-stage-implementation](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code%20for%204-stage-pipeline)
 
-
-# How to run and test
-
-## Stepts to test the code
-### Step 1: Copy all the .bsv files in [code/](code) into the same directory and cd to that directory.
-### Step 2: Create .ba files for modules acc (mkAcc), mul (mkMul) and top_module (mkImac) and the testbench (imacTb). 
-```bsc -sim -g mkAcc imac_acc.bsv```
-
-```bsc -sim -g mkMul imac_mul.bsv```
-
-```bsc -sim -g mkImac imac_top_module.bsv```
-
-```bsc -sim -g imacTb imac_tb.bsv```
-
-### Step 3: Create bsim file for testbench
-```bsc -sim -e imacTb -o ./imacTb_bsim```
-
-### Step 4: Run the bsim file
-```./imacTb_bsim```
-
-### Expected Output
-```IMAC Passed 6 cases out of 6 cases```
-![image](https://github.com/ee20b117/CAD-for-VLSI/assets/104497659/56a73ba0-0205-476f-b6a7-612dfc258220)
-
-
-### Modiying the testbench
-Currently, the testbench has 6 pre-defined test cases. They can be modified appropriately. The no. of test cases can also be increased by changing the initialised values of the registers: mul_total_cases and acc_total_cases in the testbench.
-
+The directory [code](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code) also contains the single stage implementation but with a primitive testbench with fewer test cases and without timing imformation. However, the module defintions are the same.
 
 # References
 https://ieeexplore.ieee.org/document/5548769
