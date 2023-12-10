@@ -52,7 +52,7 @@ Detailed **Timing** and **Area anaysis** are presented in [Pipeline.md](Pipeline
 
 
 ## CODE - Modules, Testing and Validation
-The complete guide to using the modules (top_module, mul and acc) are explained in the README Files of corresponding directories:
+The complete guide to using the modules (top_module, mul and acc) and testing them are explained in the README Files of corresponding directories:
 
 [code for 1-stage-implementatation](https://github.com/ee20b117/CAD-for-VLSI/tree/main/code%20for%201-stage%20pipeline)
 
