@@ -26,4 +26,4 @@
 ### Modiying the testbench
 Currently, the testbench has 6 pre-defined test cases. They can be modified appropriately. The no. of test cases can also be increased by changing the initialised values of the registers: mul_total_cases and acc_total_cases in the testbench.
 
-## The .v files are corressponding verilog files generated using ```bsc -u -verilog imac_top_module.bsv``` 
+### The .v files are corresponding verilog files generated using ```bsc -u -verilog imac_top_module.bsv``` 
