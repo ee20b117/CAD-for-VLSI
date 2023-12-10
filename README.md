@@ -47,7 +47,7 @@ The algorithm works by scanning the multiplicand and the multiplier bits sequent
 
 
 ## CODE - Modules, Testing and Validation
-The complete guide to using the modules (top_module, mul and acc) are explained in the README file inside code/ directory.
+The complete guide to using the modules (top_module, mul and acc) are explained in the [README](code/README.md) file inside code/ directory.
 
 
 
