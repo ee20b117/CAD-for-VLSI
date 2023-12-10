@@ -2,7 +2,7 @@ package imac_tb_4stage;
 
 import imac_acc_4stage :: *;
 import imac_mul_4stage :: *;
-import imac_top_module :: *;
+import imac_top_module_4stage :: *;
 
     module imacTb (Empty);
     Reg#(Bit#(64)) m[12];
