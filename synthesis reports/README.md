@@ -1,0 +1,1 @@
+This directory contains all the **synthesis reports** corresponding to all the three ways of implementation: 1-stage pipelined implementation, 4-stage pipelined implementation and alternate hardwae extensive approach.
