@@ -1,1 +1,1 @@
-This directory contains the YOSYS synthesis reports corressponding to MUL (mkMUL) and ACC (mkAcc) modules for the alternate hardware extensive approach.
+This directory contains the YOSYS synthesis reports corresponding to IMAC (mkMac) module in the alternate hardware extensive approach.
