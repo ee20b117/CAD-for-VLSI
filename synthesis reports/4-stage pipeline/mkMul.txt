@@ -1,0 +1,906 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2019  Clifford Wolf <clifford@clifford.at>           |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9 (git sha1 1979e0b)
+
+
+-- Parsing `mkMul.v' using frontend `verilog' --
+
+1. Executing Verilog-2005 frontend: mkMul.v
+Parsing Verilog input from `mkMul.v' to AST representation.
+Warning: Found one of those horrible `(synopsys|synthesis) parallel_case' comments.
+Yosys does support them but it is recommended to use Verilog `parallel_case' attributes instead!
+Warning: Found one of those horrible `(synopsys|synthesis) translate_off' comments.
+Yosys does support them but it is recommended to use `ifdef constructs instead!
+Generating RTLIL representation for module `\mkMul'.
+Note: Assuming pure combinatorial block at mkMul.v:327 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:350 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:375 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:400 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:425 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:441 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:461 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:481 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:537 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:566 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:581 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:596 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at mkMul.v:627 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+-- Running command `synth' --
+
+2. Executing SYNTH pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$mkMul.v:658$263 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:627$234 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:596$218 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:581$206 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:566$194 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:537$160 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:481$144 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:461$133 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:441$122 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:425$111 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:400$93 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:375$75 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:350$57 in module mkMul.
+Marked 1 switch rules as full_case in process $proc$mkMul.v:327$39 in module mkMul.
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_INIT pass (extract init attributes).
+
+2.2.4. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\mkMul.$proc$mkMul.v:658$263'.
+     1/30: $0\state[3:0]
+     2/30: $0\qq_3[1:0]
+     3/30: $0\qq_2[1:0]
+     4/30: $0\qq_1[1:0]
+     5/30: $0\qq[1:0]
+     6/30: $0\q_3[63:0]
+     7/30: $0\q_2[63:0]
+     8/30: $0\q_1[63:0]
+     9/30: $0\q1_3[0:0]
+    10/30: $0\q1_2[0:0]
+    11/30: $0\q1_1[0:0]
+    12/30: $0\q1[0:0]
+    13/30: $0\q[63:0]
+    14/30: $0\m_3[63:0]
+    15/30: $0\m_2[63:0]
+    16/30: $0\m_1[63:0]
+    17/30: $0\m[63:0]
+    18/30: $0\delay[1:0]
+    19/30: $0\counter_3[7:0]
+    20/30: $0\counter_2[7:0]
+    21/30: $0\counter_1[7:0]
+    22/30: $0\counter[7:0]
+    23/30: $0\accumulatorqq_3[128:0]
+    24/30: $0\accumulatorqq_2[128:0]
+    25/30: $0\accumulatorqq_1[128:0]
+    26/30: $0\accumulatorqq[128:0]
+    27/30: $0\accumulator_3[63:0]
+    28/30: $0\accumulator_2[63:0]
+    29/30: $0\accumulator_1[63:0]
+    30/30: $0\accumulator[63:0]
+Creating decoders for process `\mkMul.$proc$mkMul.v:627$234'.
+     1/2: $1\state$D_IN[3:0]$236
+     2/2: $0\state$D_IN[3:0]$235
+Creating decoders for process `\mkMul.$proc$mkMul.v:596$218'.
+     1/2: $1\q_3$D_IN[63:0]$220
+     2/2: $0\q_3$D_IN[63:0]$219
+Creating decoders for process `\mkMul.$proc$mkMul.v:581$206'.
+     1/2: $1\q_2$D_IN[63:0]$208
+     2/2: $0\q_2$D_IN[63:0]$207
+Creating decoders for process `\mkMul.$proc$mkMul.v:566$194'.
+     1/2: $1\q_1$D_IN[63:0]$196
+     2/2: $0\q_1$D_IN[63:0]$195
+Creating decoders for process `\mkMul.$proc$mkMul.v:537$160'.
+     1/2: $1\q$D_IN[63:0]$162
+     2/2: $0\q$D_IN[63:0]$161
+Creating decoders for process `\mkMul.$proc$mkMul.v:481$144'.
+     1/2: $1\accumulatorqq_3$D_IN[128:0]$146
+     2/2: $0\accumulatorqq_3$D_IN[128:0]$145
+Creating decoders for process `\mkMul.$proc$mkMul.v:461$133'.
+     1/2: $1\accumulatorqq_2$D_IN[128:0]$135
+     2/2: $0\accumulatorqq_2$D_IN[128:0]$134
+Creating decoders for process `\mkMul.$proc$mkMul.v:441$122'.
+     1/2: $1\accumulatorqq_1$D_IN[128:0]$124
+     2/2: $0\accumulatorqq_1$D_IN[128:0]$123
+Creating decoders for process `\mkMul.$proc$mkMul.v:425$111'.
+     1/2: $1\accumulatorqq$D_IN[128:0]$113
+     2/2: $0\accumulatorqq$D_IN[128:0]$112
+Creating decoders for process `\mkMul.$proc$mkMul.v:400$93'.
+     1/2: $1\accumulator_3$D_IN[63:0]$95
+     2/2: $0\accumulator_3$D_IN[63:0]$94
+Creating decoders for process `\mkMul.$proc$mkMul.v:375$75'.
+     1/2: $1\accumulator_2$D_IN[63:0]$77
+     2/2: $0\accumulator_2$D_IN[63:0]$76
+Creating decoders for process `\mkMul.$proc$mkMul.v:350$57'.
+     1/2: $1\accumulator_1$D_IN[63:0]$59
+     2/2: $0\accumulator_1$D_IN[63:0]$58
+Creating decoders for process `\mkMul.$proc$mkMul.v:327$39'.
+     1/2: $1\accumulator$D_IN[63:0]$41
+     2/2: $0\accumulator$D_IN[63:0]$40
+
+2.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\mkMul.\state$D_IN' from process `\mkMul.$proc$mkMul.v:627$234'.
+No latch inferred for signal `\mkMul.\q_3$D_IN' from process `\mkMul.$proc$mkMul.v:596$218'.
+No latch inferred for signal `\mkMul.\q_2$D_IN' from process `\mkMul.$proc$mkMul.v:581$206'.
+No latch inferred for signal `\mkMul.\q_1$D_IN' from process `\mkMul.$proc$mkMul.v:566$194'.
+No latch inferred for signal `\mkMul.\q$D_IN' from process `\mkMul.$proc$mkMul.v:537$160'.
+No latch inferred for signal `\mkMul.\accumulatorqq_3$D_IN' from process `\mkMul.$proc$mkMul.v:481$144'.
+No latch inferred for signal `\mkMul.\accumulatorqq_2$D_IN' from process `\mkMul.$proc$mkMul.v:461$133'.
+No latch inferred for signal `\mkMul.\accumulatorqq_1$D_IN' from process `\mkMul.$proc$mkMul.v:441$122'.
+No latch inferred for signal `\mkMul.\accumulatorqq$D_IN' from process `\mkMul.$proc$mkMul.v:425$111'.
+No latch inferred for signal `\mkMul.\accumulator_3$D_IN' from process `\mkMul.$proc$mkMul.v:400$93'.
+No latch inferred for signal `\mkMul.\accumulator_2$D_IN' from process `\mkMul.$proc$mkMul.v:375$75'.
+No latch inferred for signal `\mkMul.\accumulator_1$D_IN' from process `\mkMul.$proc$mkMul.v:350$57'.
+No latch inferred for signal `\mkMul.\accumulator$D_IN' from process `\mkMul.$proc$mkMul.v:327$39'.
+
+2.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\mkMul.\accumulator' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$488' with positive edge clock.
+Creating register for signal `\mkMul.\accumulator_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$489' with positive edge clock.
+Creating register for signal `\mkMul.\accumulator_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$490' with positive edge clock.
+Creating register for signal `\mkMul.\accumulator_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$491' with positive edge clock.
+Creating register for signal `\mkMul.\accumulatorqq' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$492' with positive edge clock.
+Creating register for signal `\mkMul.\accumulatorqq_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$493' with positive edge clock.
+Creating register for signal `\mkMul.\accumulatorqq_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$494' with positive edge clock.
+Creating register for signal `\mkMul.\accumulatorqq_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$495' with positive edge clock.
+Creating register for signal `\mkMul.\counter' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$496' with positive edge clock.
+Creating register for signal `\mkMul.\counter_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$497' with positive edge clock.
+Creating register for signal `\mkMul.\counter_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$498' with positive edge clock.
+Creating register for signal `\mkMul.\counter_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$499' with positive edge clock.
+Creating register for signal `\mkMul.\delay' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$500' with positive edge clock.
+Creating register for signal `\mkMul.\m' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$501' with positive edge clock.
+Creating register for signal `\mkMul.\m_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$502' with positive edge clock.
+Creating register for signal `\mkMul.\m_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$503' with positive edge clock.
+Creating register for signal `\mkMul.\m_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$504' with positive edge clock.
+Creating register for signal `\mkMul.\q' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$505' with positive edge clock.
+Creating register for signal `\mkMul.\q1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$506' with positive edge clock.
+Creating register for signal `\mkMul.\q1_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$507' with positive edge clock.
+Creating register for signal `\mkMul.\q1_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$508' with positive edge clock.
+Creating register for signal `\mkMul.\q1_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$509' with positive edge clock.
+Creating register for signal `\mkMul.\q_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$510' with positive edge clock.
+Creating register for signal `\mkMul.\q_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$511' with positive edge clock.
+Creating register for signal `\mkMul.\q_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$512' with positive edge clock.
+Creating register for signal `\mkMul.\qq' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$513' with positive edge clock.
+Creating register for signal `\mkMul.\qq_1' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$514' with positive edge clock.
+Creating register for signal `\mkMul.\qq_2' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$515' with positive edge clock.
+Creating register for signal `\mkMul.\qq_3' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$516' with positive edge clock.
+Creating register for signal `\mkMul.\state' using process `\mkMul.$proc$mkMul.v:658$263'.
+  created $dff cell `$procdff$517' with positive edge clock.
+
+2.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 31 empty switches in `\mkMul.$proc$mkMul.v:658$263'.
+Removing empty process `mkMul.$proc$mkMul.v:658$263'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:627$234'.
+Removing empty process `mkMul.$proc$mkMul.v:627$234'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:596$218'.
+Removing empty process `mkMul.$proc$mkMul.v:596$218'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:581$206'.
+Removing empty process `mkMul.$proc$mkMul.v:581$206'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:566$194'.
+Removing empty process `mkMul.$proc$mkMul.v:566$194'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:537$160'.
+Removing empty process `mkMul.$proc$mkMul.v:537$160'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:481$144'.
+Removing empty process `mkMul.$proc$mkMul.v:481$144'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:461$133'.
+Removing empty process `mkMul.$proc$mkMul.v:461$133'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:441$122'.
+Removing empty process `mkMul.$proc$mkMul.v:441$122'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:425$111'.
+Removing empty process `mkMul.$proc$mkMul.v:425$111'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:400$93'.
+Removing empty process `mkMul.$proc$mkMul.v:400$93'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:375$75'.
+Removing empty process `mkMul.$proc$mkMul.v:375$75'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:350$57'.
+Removing empty process `mkMul.$proc$mkMul.v:350$57'.
+Found and cleaned up 1 empty switch in `\mkMul.$proc$mkMul.v:327$39'.
+Removing empty process `mkMul.$proc$mkMul.v:327$39'.
+Cleaned up 44 empty switches.
+
+2.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+<suppressed ~83 debug messages>
+
+2.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 11 unused cells and 239 unused wires.
+<suppressed ~17 debug messages>
+
+2.5. Executing CHECK pass (checking for obvious problems).
+checking module mkMul..
+found and reported 0 problems.
+
+2.6. Executing OPT pass (performing simple optimizations).
+
+2.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+<suppressed ~456 debug messages>
+Removed a total of 152 cells.
+
+2.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mkMul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+2.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mkMul.
+Performed a total of 0 changes.
+
+2.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.6.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 0 unused cells and 141 unused wires.
+<suppressed ~1 debug messages>
+
+2.6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.6.9. Finished OPT passes. (There is nothing left to do.)
+
+2.7. Executing WREDUCE pass (reducing word size of cells).
+Removed top 3 bits (of 8) from port B of cell mkMul.$eq$mkMul.v:264$2 ($eq).
+Removed top 1 bits (of 4) from port B of cell mkMul.$eq$mkMul.v:267$5 ($eq).
+Removed top 1 bits (of 4) from port B of cell mkMul.$eq$mkMul.v:269$8 ($eq).
+Removed top 1 bits (of 2) from port B of cell mkMul.$eq$mkMul.v:269$9 ($eq).
+Removed top 1 bits (of 2) from port B of cell mkMul.$eq$mkMul.v:271$14 ($eq).
+Removed top 1 bits (of 2) from port B of cell mkMul.$eq$mkMul.v:273$19 ($eq).
+Removed top 1 bits (of 2) from port B of cell mkMul.$eq$mkMul.v:275$24 ($eq).
+Removed top 7 bits (of 8) from port B of cell mkMul.$add$mkMul.v:315$36 ($add).
+Removed top 3 bits (of 4) from mux cell mkMul.$ternary$mkMul.v:324$38 ($mux).
+Removed top 2 bits (of 4) from port B of cell mkMul.$eq$mkMul.v:337$42 ($eq).
+Removed top 1 bits (of 4) from port B of cell mkMul.$eq$mkMul.v:338$43 ($eq).
+Removed top 2 bits (of 4) from port B of cell mkMul.$eq$mkMul.v:433$116 ($eq).
+Removed top 3 bits (of 4) from port B of cell mkMul.$eq$mkMul.v:612$230 ($eq).
+Removed top 1 bits (of 64) from wire mkMul.MUX_accumulator$write_1__VAL_3.
+Removed top 1 bits (of 64) from wire mkMul.MUX_accumulator_1$write_1__VAL_3.
+Removed top 1 bits (of 64) from wire mkMul.MUX_accumulator_2$write_1__VAL_3.
+Removed top 1 bits (of 64) from wire mkMul.MUX_accumulator_3$write_1__VAL_3.
+Removed top 1 bits (of 129) from wire mkMul.MUX_accumulatorqq$write_1__VAL_1.
+Removed top 1 bits (of 129) from wire mkMul.MUX_accumulatorqq_1$write_1__VAL_1.
+Removed top 1 bits (of 129) from wire mkMul.MUX_accumulatorqq_2$write_1__VAL_1.
+Removed top 1 bits (of 64) from wire mkMul.MUX_q$write_1__VAL_2.
+Removed top 1 bits (of 64) from wire mkMul.MUX_q_1$write_1__VAL_2.
+Removed top 1 bits (of 64) from wire mkMul.MUX_q_2$write_1__VAL_2.
+Removed top 1 bits (of 64) from wire mkMul.MUX_q_3$write_1__VAL_2.
+Removed top 3 bits (of 4) from wire mkMul.MUX_state$write_1__VAL_1.
+
+2.8. Executing PEEPOPT pass (run peephole optimizers).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 0 unused cells and 12 unused wires.
+<suppressed ~1 debug messages>
+
+2.10. Executing TECHMAP pass (map to technology primitives).
+
+2.10.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/usr/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.10.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~148 debug messages>
+
+2.11. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module mkMul:
+  creating $macc model for $add$mkMul.v:315$36 ($add).
+  creating $macc model for $add$mkMul.v:647$255 ($add).
+  creating $macc model for $add$mkMul.v:649$257 ($add).
+  creating $macc model for $add$mkMul.v:651$259 ($add).
+  creating $macc model for $add$mkMul.v:653$261 ($add).
+  creating $macc model for $sub$mkMul.v:648$256 ($sub).
+  creating $macc model for $sub$mkMul.v:650$258 ($sub).
+  creating $macc model for $sub$mkMul.v:652$260 ($sub).
+  creating $macc model for $sub$mkMul.v:654$262 ($sub).
+  creating $alu model for $macc $sub$mkMul.v:654$262.
+  creating $alu model for $macc $sub$mkMul.v:652$260.
+  creating $alu model for $macc $sub$mkMul.v:650$258.
+  creating $alu model for $macc $sub$mkMul.v:648$256.
+  creating $alu model for $macc $add$mkMul.v:653$261.
+  creating $alu model for $macc $add$mkMul.v:651$259.
+  creating $alu model for $macc $add$mkMul.v:649$257.
+  creating $alu model for $macc $add$mkMul.v:647$255.
+  creating $alu model for $macc $add$mkMul.v:315$36.
+  creating $alu cell for $add$mkMul.v:315$36: $auto$alumacc.cc:474:replace_alu$530
+  creating $alu cell for $add$mkMul.v:649$257: $auto$alumacc.cc:474:replace_alu$533
+  creating $alu cell for $add$mkMul.v:651$259: $auto$alumacc.cc:474:replace_alu$536
+  creating $alu cell for $add$mkMul.v:653$261: $auto$alumacc.cc:474:replace_alu$539
+  creating $alu cell for $add$mkMul.v:647$255: $auto$alumacc.cc:474:replace_alu$542
+  creating $alu cell for $sub$mkMul.v:648$256: $auto$alumacc.cc:474:replace_alu$545
+  creating $alu cell for $sub$mkMul.v:650$258: $auto$alumacc.cc:474:replace_alu$548
+  creating $alu cell for $sub$mkMul.v:652$260: $auto$alumacc.cc:474:replace_alu$551
+  creating $alu cell for $sub$mkMul.v:654$262: $auto$alumacc.cc:474:replace_alu$554
+  created 9 $alu and 0 $macc cells.
+
+2.12. Executing SHARE pass (SAT-based resource sharing).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mkMul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mkMul.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.13.9. Finished OPT passes. (There is nothing left to do.)
+
+2.14. Executing FSM pass (extract and optimize FSM).
+
+2.14.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register mkMul.state.
+
+2.14.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\state' from module `\mkMul'.
+  found $dff cell for state register: $procdff$517
+  root of input selection tree: $0\state[3:0]
+  found reset state: 4'0000 (guessed from mux tree)
+  found ctrl input: \RST_N
+  found state code: 4'0000
+  found ctrl input: \state$EN
+  found ctrl input: \qq$EN
+  found ctrl input: $eq$mkMul.v:338$43_Y
+  found ctrl input: $eq$mkMul.v:337$42_Y
+  found ctrl input: $eq$mkMul.v:433$116_Y
+  found ctrl input: $eq$mkMul.v:269$8_Y
+  found ctrl input: \EN_put_val
+  found ctrl input: $eq$mkMul.v:267$5_Y
+  found state code: 4'1010
+  found state code: 4'0110
+  found state code: 4'0101
+  found state code: 4'0100
+  found state code: 4'0011
+  found state code: 4'0010
+  found state code: 4'0001
+  found ctrl input: $eq$mkMul.v:264$2_Y
+  found ctrl output: \RDY_put_val
+  found ctrl output: $eq$mkMul.v:267$5_Y
+  found ctrl output: $eq$mkMul.v:269$8_Y
+  found ctrl output: $eq$mkMul.v:337$42_Y
+  found ctrl output: $eq$mkMul.v:338$43_Y
+  found ctrl output: $eq$mkMul.v:433$116_Y
+  found ctrl output: \qq$EN
+  ctrl inputs: { $eq$mkMul.v:264$2_Y \state$EN \EN_put_val \RST_N }
+  ctrl outputs: { $0\state[3:0] $eq$mkMul.v:433$116_Y $eq$mkMul.v:338$43_Y $eq$mkMul.v:337$42_Y $eq$mkMul.v:269$8_Y $eq$mkMul.v:267$5_Y \qq$EN \RDY_put_val }
+  transition:     4'0000 4'---0 ->     4'0000 11'00000000001
+  transition:     4'0000 4'-0-1 ->     4'0000 11'00000000001
+  transition:     4'0000 4'-101 ->     4'1010 11'10100000001
+  transition:     4'0000 4'-111 ->     4'0001 11'00010000001
+  transition:     4'0100 4'---0 ->     4'0000 11'00000100000
+  transition:     4'0100 4'-0-1 ->     4'0100 11'01000100000
+  transition:     4'0100 4'-101 ->     4'0101 11'01010100000
+  transition:     4'0010 4'---0 ->     4'0000 11'00001000000
+  transition:     4'0010 4'-0-1 ->     4'0010 11'00101000000
+  transition:     4'0010 4'-101 ->     4'0011 11'00111000000
+  transition:     4'1010 4'---0 ->     4'0000 11'00000000000
+  transition:     4'1010 4'-0-1 ->     4'1010 11'10100000000
+  transition:     4'1010 4'-101 ->     4'1010 11'10100000000
+  transition:     4'1010 4'-111 ->     4'0001 11'00010000000
+  transition:     4'0110 4'---0 ->     4'0000 11'00000001000
+  transition:     4'0110 4'-0-1 ->     4'0110 11'01100001000
+  transition:     4'0110 4'-101 ->     4'0010 11'00100001000
+  transition:     4'0001 4'---0 ->     4'0000 11'00000000010
+  transition:     4'0001 4'-0-1 ->     4'0001 11'00010000010
+  transition:     4'0001 4'-101 ->     4'0110 11'01100000010
+  transition:     4'0101 4'---0 ->     4'0000 11'00000000100
+  transition:     4'0101 4'-0-1 ->     4'0101 11'01010000100
+  transition:     4'0101 4'0101 ->     4'0001 11'00010000100
+  transition:     4'0101 4'1101 ->     4'0000 11'00000000100
+  transition:     4'0011 4'---0 ->     4'0000 11'00000010000
+  transition:     4'0011 4'-0-1 ->     4'0011 11'00110010000
+  transition:     4'0011 4'-101 ->     4'0100 11'01000010000
+
+2.14.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\state$557' from module `\mkMul'.
+
+2.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 12 unused cells and 12 unused wires.
+<suppressed ~15 debug messages>
+
+2.14.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\state$557' from module `\mkMul'.
+  Removing unused output signal $0\state[3:0] [0].
+  Removing unused output signal $0\state[3:0] [1].
+  Removing unused output signal $0\state[3:0] [2].
+  Removing unused output signal $0\state[3:0] [3].
+
+2.14.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\state$557' from module `\mkMul' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  0000 -> -------1
+  0100 -> ------1-
+  0010 -> -----1--
+  1010 -> ----1---
+  0110 -> ---1----
+  0001 -> --1-----
+  0101 -> -1------
+  0011 -> 1-------
+
+2.14.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\state$557' from module `\mkMul':
+-------------------------------------
+
+  Information on FSM $fsm$\state$557 (\state):
+
+  Number of input signals:    4
+  Number of output signals:   7
+  Number of state bits:       8
+
+  Input signals:
+    0: \RST_N
+    1: \EN_put_val
+    2: \state$EN
+    3: $eq$mkMul.v:264$2_Y
+
+  Output signals:
+    0: \RDY_put_val
+    1: \qq$EN
+    2: $eq$mkMul.v:267$5_Y
+    3: $eq$mkMul.v:269$8_Y
+    4: $eq$mkMul.v:337$42_Y
+    5: $eq$mkMul.v:338$43_Y
+    6: $eq$mkMul.v:433$116_Y
+
+  State encoding:
+    0: 8'-------1  <RESET STATE>
+    1: 8'------1-
+    2: 8'-----1--
+    3: 8'----1---
+    4: 8'---1----
+    5: 8'--1-----
+    6: 8'-1------
+    7: 8'1-------
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 4'---0   ->     0 7'0000001
+      1:     0 4'-0-1   ->     0 7'0000001
+      2:     0 4'-101   ->     3 7'0000001
+      3:     0 4'-111   ->     5 7'0000001
+      4:     1 4'---0   ->     0 7'0100000
+      5:     1 4'-0-1   ->     1 7'0100000
+      6:     1 4'-101   ->     6 7'0100000
+      7:     2 4'---0   ->     0 7'1000000
+      8:     2 4'-0-1   ->     2 7'1000000
+      9:     2 4'-101   ->     7 7'1000000
+     10:     3 4'---0   ->     0 7'0000000
+     11:     3 4'-101   ->     3 7'0000000
+     12:     3 4'-0-1   ->     3 7'0000000
+     13:     3 4'-111   ->     5 7'0000000
+     14:     4 4'---0   ->     0 7'0001000
+     15:     4 4'-101   ->     2 7'0001000
+     16:     4 4'-0-1   ->     4 7'0001000
+     17:     5 4'---0   ->     0 7'0000010
+     18:     5 4'-101   ->     4 7'0000010
+     19:     5 4'-0-1   ->     5 7'0000010
+     20:     6 4'---0   ->     0 7'0000100
+     21:     6 4'1101   ->     0 7'0000100
+     22:     6 4'0101   ->     5 7'0000100
+     23:     6 4'-0-1   ->     6 7'0000100
+     24:     7 4'---0   ->     0 7'0010000
+     25:     7 4'-101   ->     1 7'0010000
+     26:     7 4'-0-1   ->     7 7'0010000
+
+-------------------------------------
+
+2.14.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\state$557' from module `\mkMul'.
+
+2.15. Executing OPT pass (performing simple optimizations).
+
+2.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+<suppressed ~1 debug messages>
+
+2.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+<suppressed ~39 debug messages>
+Removed a total of 13 cells.
+
+2.15.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.15.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 0 unused cells and 21 unused wires.
+<suppressed ~1 debug messages>
+
+2.15.5. Finished fast OPT passes.
+
+2.16. Executing MEMORY pass.
+
+2.16.1. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+2.16.2. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.16.3. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.16.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.16.5. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.18. Executing OPT pass (performing simple optimizations).
+
+2.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+<suppressed ~4 debug messages>
+
+2.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.18.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.18.5. Finished fast OPT passes.
+
+2.19. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+2.20. Executing OPT pass (performing simple optimizations).
+
+2.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mkMul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+2.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mkMul.
+    New input vector for $reduce_or cell $auto$fsm_map.cc:144:implement_pattern_cache$651: { $auto$fsm_map.cc:118:implement_pattern_cache$645 $auto$fsm_map.cc:118:implement_pattern_cache$649 }
+    New input vector for $reduce_or cell $auto$fsm_map.cc:144:implement_pattern_cache$642: { $auto$fsm_map.cc:118:implement_pattern_cache$636 $auto$fsm_map.cc:118:implement_pattern_cache$640 }
+    New input vector for $reduce_or cell $auto$fsm_map.cc:144:implement_pattern_cache$633: { $auto$fsm_map.cc:118:implement_pattern_cache$621 $auto$fsm_map.cc:118:implement_pattern_cache$627 $auto$fsm_map.cc:118:implement_pattern_cache$631 }
+    New input vector for $reduce_or cell $auto$fsm_map.cc:144:implement_pattern_cache$618: { $auto$fsm_map.cc:118:implement_pattern_cache$612 $auto$fsm_map.cc:118:implement_pattern_cache$616 }
+    New input vector for $reduce_or cell $auto$fsm_map.cc:144:implement_pattern_cache$598: { $auto$fsm_map.cc:118:implement_pattern_cache$592 $auto$fsm_map.cc:118:implement_pattern_cache$596 }
+    New input vector for $reduce_or cell $auto$fsm_map.cc:144:implement_pattern_cache$580: { $auto$fsm_map.cc:118:implement_pattern_cache$574 $auto$fsm_map.cc:74:implement_pattern_cache$570 $auto$fsm_map.cc:118:implement_pattern_cache$578 }
+    New input vector for $reduce_or cell $auto$fsm_map.cc:105:implement_pattern_cache$626: { \state [0] \state [3] }
+  Optimizing cells in module \mkMul.
+Performed a total of 7 changes.
+
+2.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.20.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.20.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.20.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.20.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.20.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mkMul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+2.20.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mkMul.
+Performed a total of 0 changes.
+
+2.20.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+Removed a total of 0 cells.
+
+2.20.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.20.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+
+2.20.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.20.16. Finished OPT passes. (There is nothing left to do.)
+
+2.21. Executing TECHMAP pass (map to technology primitives).
+
+2.21.1. Executing Verilog-2005 frontend: <techmap.v>
+Parsing Verilog input from `<techmap.v>' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+2.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_or.
+Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=64\B_WIDTH=64\Y_WIDTH=64 for cells of type $alu.
+Using extmapper simplemap for cells of type $mux.
+Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=1\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $logic_not.
+Using template $paramod\_90_pmux\WIDTH=64\S_WIDTH=3 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=129\S_WIDTH=3 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=64\S_WIDTH=4 for cells of type $pmux.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=64 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=8 for cells of type $lcu.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~4215 debug messages>
+
+2.22. Executing OPT pass (performing simple optimizations).
+
+2.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+<suppressed ~1006 debug messages>
+
+2.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+<suppressed ~315 debug messages>
+Removed a total of 105 cells.
+
+2.22.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 2084 unused cells and 3797 unused wires.
+<suppressed ~2085 debug messages>
+
+2.22.5. Finished fast OPT passes.
+
+2.23. Executing ABC pass (technology mapping using ABC).
+
+2.23.1. Extracting gate netlist of module `\mkMul' to `<abc-temp-dir>/input.blif'..
+Extracted 12011 gates and 13262 wires to a netlist network with 1249 inputs and 1120 outputs.
+
+2.23.1.1. Executing ABC.
+Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 17 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + retime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+2.23.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:      165
+ABC RESULTS:            ANDNOT cells:     1228
+ABC RESULTS:              AOI3 cells:     1094
+ABC RESULTS:              AOI4 cells:      505
+ABC RESULTS:               MUX cells:      952
+ABC RESULTS:              NAND cells:      867
+ABC RESULTS:               NOR cells:      125
+ABC RESULTS:               NOT cells:      830
+ABC RESULTS:              OAI3 cells:     1026
+ABC RESULTS:              OAI4 cells:      510
+ABC RESULTS:                OR cells:      828
+ABC RESULTS:             ORNOT cells:      162
+ABC RESULTS:              XNOR cells:      485
+ABC RESULTS:               XOR cells:      574
+ABC RESULTS:        internal signals:    10893
+ABC RESULTS:           input signals:     1249
+ABC RESULTS:          output signals:     1120
+Removing temp directory.
+
+2.24. Executing OPT pass (performing simple optimizations).
+
+2.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mkMul.
+
+2.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mkMul'.
+<suppressed ~123 debug messages>
+Removed a total of 41 cells.
+
+2.24.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mkMul..
+Removed 0 unused cells and 5214 unused wires.
+<suppressed ~58 debug messages>
+
+2.24.5. Finished fast OPT passes.
+
+2.25. Executing HIERARCHY pass (managing design hierarchy).
+
+2.26. Printing statistics.
+
+=== mkMul ===
+
+   Number of wires:               8304
+   Number of wire bits:          13932
+   Number of public wires:          81
+   Number of public wire bits:    4430
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              10429
+     $_ANDNOT_                    1228
+     $_AND_                        165
+     $_AOI3_                      1094
+     $_AOI4_                       505
+     $_DFF_P_                     1119
+     $_MUX_                        952
+     $_NAND_                       867
+     $_NOR_                        125
+     $_NOT_                        830
+     $_OAI3_                      1026
+     $_OAI4_                       510
+     $_ORNOT_                      162
+     $_OR_                         828
+     $_XNOR_                       464
+     $_XOR_                        554
+
+2.27. Executing CHECK pass (checking for obvious problems).
+checking module mkMul..
+found and reported 0 problems.
+
+-- Writing to `mkMul.blif' using backend `blif' --
+
+3. Executing BLIF backend.
+
+Warnings: 2 unique messages, 2 total
+End of script. Logfile hash: acd02deefe
+CPU: user 3.94s system 0.02s, MEM: 61.74 MB total, 53.30 MB resident
+Yosys 0.9 (git sha1 1979e0b)
+Time spent: 26% 16x opt_clean (1 sec), 21% 13x opt_merge (0 sec), ...
